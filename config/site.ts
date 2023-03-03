@@ -5,25 +5,29 @@ interface SiteConfig {
   description: string
   mainNav: NavItem[]
   links: {
-    twitter: string
+    designer: string
     github: string
-    docs: string
+    donate: string
   }
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Next.js",
+  name: "Placard",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "Design your digital contact card in seconds.",
   mainNav: [
     {
       title: "Home",
       href: "/",
     },
+    {
+      title: "Designer",
+      href: "/designer",
+    },
   ],
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
-    docs: "https://ui.shadcn.com",
+    designer: "/designer",
+    github: "https://github.com/placardapp",
+    donate: "https://cash.app/$itstotallyjan",
   },
 }

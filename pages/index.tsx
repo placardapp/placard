@@ -9,42 +9,62 @@ export default function IndexPage() {
   return (
     <Layout>
       <Head>
-        <title>Next.js</title>
+        <title>Placard</title>
         <meta
           name="description"
-          content="Next.js template for building apps with Radix UI and Tailwind CSS"
+          content="Design your digital contact card in seconds."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/placard.png" />
       </Head>
       <section className="container grid items-center gap-6 pt-6 pb-8 md:py-10">
         <div className="flex max-w-[980px] flex-col items-start gap-2">
-          <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
-            Beautifully designed components <br className="hidden sm:inline" />
-            built with Radix UI and Tailwind CSS.
+          <h1 className="text-3xl font-bold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
+            Design a digital contact card for <br className="hidden sm:inline" />
+            you or your business in seconds.
           </h1>
           <p className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
-            Accessible and customizable components that you can copy and paste
-            into your apps. Free. Open Source. And Next.js 13 Ready.
+            Upload a picture, write a quick bio, choose your colors, and you&apos;re done.
+            Free and open source, <span className="underline">forever</span>.
           </p>
         </div>
         <div className="flex gap-4">
           <Link
-            href={siteConfig.links.docs}
+            href={siteConfig.links.designer}
             target="_blank"
             rel="noreferrer"
-            className={buttonVariants({ size: "lg" })}
+            className={buttonVariants({ size: "lg" }) + " shadow-md shadow-gray-500 hover:shadow-slate-700 focus:shadow-slate-700"}
           >
-            Documentation
+            Design Yours -&gt;
           </Link>
           <Link
             target="_blank"
             rel="noreferrer"
-            href={siteConfig.links.github}
+            href={siteConfig.links.donate}
             className={buttonVariants({ variant: "outline", size: "lg" })}
           >
-            GitHub
+            Donate
           </Link>
+        </div>
+      </section>
+      <section className="container grid items-center gap-6 pt-6 pb-8 md:py-10">
+      <div className="flex max-w-[980px] flex-col items-start gap-2">
+          <h1 className="text-3xl font-medium leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
+            Dress to impress.
+          </h1>
+          <p className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
+            Most aspects of a Placard are customizable,<br className="hidden sm:inline"/>
+            so you can show the most fitting version of you.
+          </p>
+        </div>
+        <div className="flex max-w-[980px] flex-col items-start gap-2">
+          <h1 className="text-3xl font-medium leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
+            Stay visible.
+          </h1>
+          <p className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
+            Placards are stored on the server for 90 days after their last visit,<br className="hidden sm:inline"/>
+            meaning that as long as it gets viewed, it&apos;ll stay up.
+          </p>
         </div>
       </section>
     </Layout>
