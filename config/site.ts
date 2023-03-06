@@ -22,11 +22,11 @@ export const siteConfig: SiteConfig = {
     },
     {
       title: "Designer",
-      href: "/designer",
+      href: "https://designer.placard.blueysh.me",
     },
   ],
   links: {
-    designer: "/designer",
+    designer: "https://designer.placard.blueysh.me",
     github: "https://github.com/placardapp",
     donate: "https://cash.app/$itstotallyjan",
   },
